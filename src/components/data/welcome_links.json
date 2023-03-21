@@ -1,21 +1,21 @@
 [
     {
-        "class": "",
+        "class": "no_class",
         "src": "room",
         "alt": "Room"
     },
     {
-        "class": "",
+        "class": "no_class",
         "src": "pool",
         "alt": "Pool"
     },
     {
-        "class": "",
+        "class": "no_class",
         "src": "dining",
         "alt": "Dining"
     },
     {
-        "class": "",
+        "class": "no_class",
         "src": "attractions",
         "alt": "Attractions"
     },
