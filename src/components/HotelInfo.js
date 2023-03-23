@@ -1,53 +1,53 @@
 import React, { useState, useEffect } from 'react';
-// import aminitiesListData from './data/aminities_list.json'
-// import accesibilityListData from './data/accesibility_list.json'
-// import arrivalListData from './data/arrival_list.json'
+import aminitiesListData from './data/aminities_list.json'
+import accesibilityListData from './data/accesibility_list.json'
+import arrivalListData from './data/arrival_list.json'
 
 
 const HotelInfo = () => {
 
-  const [aminitiesListData, setaminitiesListData] = useState([]);
-  const [accesibilityListData, setaccesibilityListData] = useState([]);
-  const [arrivalListData, setarrivalListData] = useState([]);
+  // const [aminitiesListData, setaminitiesListData] = useState([]);
+  // const [accesibilityListData, setaccesibilityListData] = useState([]);
+  // const [arrivalListData, setarrivalListData] = useState([]);
 
 
-  const loadaminitiesListData = async() => {
-    // Query the API gateway
-    const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/aminities')
-    let jsonData = await resp.json();
+  // const loadaminitiesListData = async() => {
+  //   // Query the API gateway
+  //   const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/aminities')
+  //   let jsonData = await resp.json();
 
-    // Assign response data to our state variable
-    setaminitiesListData(jsonData);    
-  }
+  //   // Assign response data to our state variable
+  //   setaminitiesListData(jsonData);    
+  // }
 
-  const loadaccesibilityListData = async() => {
-    // Query the API gateway
-    const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/accessibility')
-    let jsonData = await resp.json();
+  // const loadaccesibilityListData = async() => {
+  //   // Query the API gateway
+  //   const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/accessibility')
+  //   let jsonData = await resp.json();
 
-    // Assign response data to our state variable
-    setaccesibilityListData(jsonData);    
-  }
+  //   // Assign response data to our state variable
+  //   setaccesibilityListData(jsonData);    
+  // }
 
-  const loadarrivalListData = async() => {
-    // Query the API gateway
-    const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/arrival')
-    let jsonData = await resp.json();
+  // const loadarrivalListData = async() => {
+  //   // Query the API gateway
+  //   const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/arrival')
+  //   let jsonData = await resp.json();
 
-    // Assign response data to our state variable
-    setarrivalListData(jsonData);    
-  }
+  //   // Assign response data to our state variable
+  //   setarrivalListData(jsonData);    
+  // }
 
-  useEffect(() => {
-    // load the aminities data from api gateway
-    loadaminitiesListData();
+  // useEffect(() => {
+  //   // load the aminities data from api gateway
+  //   loadaminitiesListData();
 
-    // load the accesibilities data from api gateway
-    loadaccesibilityListData();
+  //   // load the accesibilities data from api gateway
+  //   loadaccesibilityListData();
 
-    // load the arrival data from api gateway
-    loadarrivalListData()
-  }, []); 
+  //   // load the arrival data from api gateway
+  //   loadarrivalListData()
+  // }, []); 
 
   return(
       <div className="scene" id="hotelinfo">

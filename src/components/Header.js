@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
-// import menuLinksData from './data/menu_links.json'
+import menuLinksData from './data/menu_links.json'
 
 const Header = () => {
 
-  const [menuLinksData, setMenuLinksData] = useState([]);
+  // const [menuLinksData, setMenuLinksData] = useState([]);
 
-  const loadMenuLinksData = async() => {
-    // Query the API gateway
-    const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/menulink')
-    let jsonData = await resp.json();
+  // const loadMenuLinksData = async() => {
+  //   // Query the API gateway
+  //   const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/menulink')
+  //   let jsonData = await resp.json();
 
-    // Assign response data to our state variable
-    setMenuLinksData(jsonData);    
-  }
+  //   // Assign response data to our state variable
+  //   setMenuLinksData(jsonData);    
+  // }
 
-  useEffect(() => {
-    // load the menu linskd data from api gateway
-    loadMenuLinksData();
-  }, []); 
+  // useEffect(() => {
+  //   // load the menu linskd data from api gateway
+  //   loadMenuLinksData();
+  // }, []); 
 
   return(
       <header id="intro">

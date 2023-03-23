@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from 'react';
-// import welcomePicturesData from './data/welcome_links.json'
+import welcomePicturesData from './data/welcome_links.json'
 
 
 const Welcome = () => {
 
-  const [welcomePicturesData, setwelcomePicturesData] = useState([]);
+  // const [welcomePicturesData, setwelcomePicturesData] = useState([]);
 
-  const loadwelcomePicturesData = async() => {
-    // Query the API gateway
-    const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/welcome')
-    let jsonData = await resp.json();
+  // const loadwelcomePicturesData = async() => {
+  //   // Query the API gateway
+  //   const resp = await fetch('https://r59jzpbpr7.execute-api.us-west-2.amazonaws.com/Production/welcome')
+  //   let jsonData = await resp.json();
 
-    // Assign response data to our state variable
-    setwelcomePicturesData(jsonData);    
-  }
+  //   // Assign response data to our state variable
+  //   setwelcomePicturesData(jsonData);    
+  // }
 
-  useEffect(() => {
-    // load the menu linskd data from api gateway
-    loadwelcomePicturesData();
-  }, []);
+  // useEffect(() => {
+  //   // load the menu linskd data from api gateway
+  //   loadwelcomePicturesData();
+  // }, []);
 
   return(
       <div className="scene" id="welcome">
